@@ -1,0 +1,480 @@
+:root {
+    --color-accent: #3d3d3d;
+    --color-body: #ededed;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--color-accent);
+    z-index: 0;
+}
+
+body {
+    background-color: var(--color-body);
+    padding: 0;
+    margin: 0;
+    font-family: Space Grotesk, sans-serif;
+}
+
+/* MAIN PAGE */
+.nav-bar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 1vw 2vw;
+    background-color: #FFF;
+    box-shadow: 0px 0px 2px 0px black;
+    z-index: 1000;
+    /* top: 0; */
+}
+
+.nav-bar .logo {
+    position: absolute;
+    left: 2vw;
+}
+
+.nav-bar .button-div {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+    font-size: 1.25rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+hr {
+    width: 100%;
+    height: 0.5px;
+    margin-top: 2vw;
+    border-top: 1px solid var(--color-accent)
+}
+
+.content-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.content-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* padding: 2vw; */
+    gap: 2vw;
+    margin-top: 4vw;
+    flex-direction: column;
+}
+
+#introduction-div {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-block.list {
+    align-items: baseline;
+}
+
+#introduction-title {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    /* font-style: italic; */
+    font-size: 5rem;
+    text-align: center;
+}
+
+#introduction-description {
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.title-block {
+    font-family: "Sora", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+#logo-image {
+    height: 32px;
+    width: auto;
+}
+
+.content-cards {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.project-element {
+    width: 360px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+    box-shadow: 0px 2px 5px 0px var(--color-accent);
+    gap: 1rem;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    /* padding: 0.5rem 0; */
+    font-family: "Sora", sans-serif;
+    font-weight: 500;
+}
+
+.project-label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-label div {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;;
+    /* box-shadow: 0px 2px 5px 0px black; */
+    background-color: #FFF;
+}
+
+/* PROJECT PAGE */
+#project-welcome {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.project-main-image {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+#project-title-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    gap: 4rem;
+}
+
+#project-title-content > div {
+    max-width: 35%;
+}
+
+#project-welcome {
+    gap: 2rem;
+}
+
+.project-main-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-name {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.project-title-section {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-section {
+    height: fit-content; 
+    display: flex;
+    flex-direction: column;
+}
+
+.project-section.video {
+    padding-top: 45%;
+    max-width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background-image: url("./assets/diagonal.svg"); */
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: contain;
+    margin-bottom: 4vw;
+}
+
+.project-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.caption-text p {
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+.project-caption-photos {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-end;
+    /* background-image: url("./assets/diagonal.svg"); */
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: contain;
+}
+
+.project-caption > p {
+    font-family: "Sora", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 110%; /* 26.4px */
+    margin: 0;
+}
+
+.project-text-description {
+    width: 65%;
+    margin-bottom: 3rem;
+}
+
+
+.project-text-description > p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 110%; /* 26.4px */
+    width: 100%;
+}
+
+.project-text-description > p:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.project-photo-slides {
+    width: 65%;
+    position: relative;
+    max-width: 1560px;
+    /* margin: auto; */
+}
+  
+/* Hide the images by default */
+.mySlides1 {
+    display: none;
+}
+
+.mySlides2 {
+    display: none;
+}
+
+.mySlides3 {
+    display: none;
+}
+
+  
+  /* Next & previous buttons */
+.prev, .next {
+    background-color: #FFF;
+    position: absolute;
+    bottom: 1rem;
+    margin: -40px 12px 0 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 24px;
+    transition: 0.4s ease;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.50); */
+}
+
+.next {
+    right: 0;
+}
+
+.prev > img {
+    width: 18px;
+    height: 18px;
+    padding: auto;
+}
+
+.next > img {
+    width: 18px;
+    height: 18px;
+    padding: auto;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.50);
+}
+  
+  /* Caption text */
+.caption-text {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 8px 0px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    min-height: 2em;
+}
+
+.slide img {
+    border-radius: 20px;
+    box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 840px) {
+    .nav-bar {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 1vw 4vw;
+        box-shadow: 0px 2px 5px 0px black;
+    }
+
+    .nav-bar .logo {
+        position: relative;
+        left: 0;
+    }
+
+    hr {
+        margin-top: 4rem;
+    }
+
+    .content-block {
+        margin-top: 4rem;
+    }
+
+    #project-title-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* justify-content: space-between; */
+        gap: 1rem;
+    }
+
+    #project-title-content > div {
+        max-width: 100%;
+    }
+
+    .project-name {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    
+    .project-title-section {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .project-section {
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 100%;
+    }
+
+    .project-section.video {
+        position: relative;
+        /* height: 56.25vw; */
+        /* width: 100vw; */
+        left: 0;
+        right: 0;
+        /* padding: 60px 0; */
+        /* background-image: url("./assets/diagonal_mini.svg"); */
+        background-size: contain;
+        background-repeat: space;
+        background-position: 0 0;
+        padding-top: 0;
+    }
+
+    .project-caption > p {
+        font-size: 1.5rem;
+    }
+    
+    .project-text-description > p {
+        font-size: 0.875rem;
+    }
+
+    .caption-text > p {
+        font-size: 0.875rem;
+    }
+    
+    .project-video {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .project-text-description {
+        width: 100%;
+    }
+
+    .project-photo-slides {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .project-element {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 1rem;
+        box-shadow: 0px 2px 5px 0px var(--color-accent);
+        gap: 1rem;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Fade-in animation */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
